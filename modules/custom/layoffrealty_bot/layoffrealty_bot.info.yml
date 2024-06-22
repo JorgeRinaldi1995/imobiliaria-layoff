@@ -1,0 +1,9 @@
+name: 'Layoff Realty Bot'
+type: module
+description: 'A module to interact with Telegram for realty nodes.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node
+  - drupal:config
+  - drupal:system (>=8.8.0)

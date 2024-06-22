@@ -1,0 +1,9 @@
+layoffrealty_bot.form:
+  path: '/admin/config/layoffrealty_bot/settings'
+  defaults:
+    _form: '\Drupal\layoffrealty_bot\Form\BotDataForm'
+    _title: 'Send Message to Telegram'
+  requirements:
+    _permission: 'access content'
+
+

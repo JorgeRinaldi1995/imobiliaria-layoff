@@ -1,0 +1,7 @@
+services:
+  layoffrealty_bot.telegram_service:
+    class: 'Drupal\layoffrealty_bot\Service\TelegramService'
+    arguments: ['@config.factory', '@entity_type.manager', '@logger.factory']
+  layoffrealty_bot.telegram_send_messages:
+    class: 'Drupal\layoffrealty_bot\Service\TelegramSendMessages'
+    arguments: ['@layoffrealty_bot.telegram_service']

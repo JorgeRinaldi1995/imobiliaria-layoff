@@ -1,0 +1,11 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ */
+function layoffrealty_bot_node_presave(EntityInterface $entity) {
+  $telegram_send_messages = \Drupal::service('layoffrealty_bot.telegram_send_messages');
+  $telegram_send_messages->sendMessagesToTelegram($entity);
+}
